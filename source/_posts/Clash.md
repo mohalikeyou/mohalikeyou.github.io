@@ -8,11 +8,19 @@ tags : 摆弄
 
 [Introduce]([Auto - Clash](https://lancellc.gitbook.io/clash/clash-config-file/proxy-groups/auto))
 
+# 优雅姿势
+
+-  设置匹配关键字git, github，走代理
+
+- 开启TUN模式和Mixin模式
+
+- Gobal + 代理节点 + TUN模式，接管系统所有流量走代理
+
+- 每次非正常关闭clash，都需要重新打开TUN和Mixin模式
+
 # Tun模式
 
     接管系统所有流量，包括终端，UWP等
-
-
 
 # Mixin模式
 
@@ -122,7 +130,7 @@ mixin: # object
       interval: 86400
 
 
-      
+
   rules:
     - DOMAIN-KEYWORD, git, Proxies
     - DOMAIN-KEYWORD, github, Proxies
@@ -159,7 +167,3 @@ mixin: # object
 # 配置文件
 
 Clash中的各节点的信息以及具体配置，都来自于这个文件，在这个文件中我们可以设置`url-test` ，`tolerance` ，`interval` 
-
- 
-
-
