@@ -1,0 +1,88 @@
+language: zh-Hans
+
+theme: 
+  switch: true 
+  default: style-light 
+
+favicon:
+  logo: favicon-32x32.png
+  icon16: favicon-16x16.png 
+  icon32: favicon-32x32.png
+  appleTouchIcon: apple-touch-icon.png
+  webmanifest: /site.webmanifest
+  visibilitychange: true
+  hidden: failure.ico
+  show_text: (/≧▽≦/)咦！又好了！
+  hide_text: (●—●)喔哟，崩溃啦！
+
+assets:
+  icons: 
+    type: font 
+    # 这里是您从 iconfont 处获得的图标链接。
+    css: //at.alicdn.com/t/font_383361_cfn4m13f4v.css
+    js:
+
+user:
+  name: 白云苍狗
+  first_name: 苍狗
+  last_name: 白云
+  email: admin@imalun.com
+  domain: https://www.imalun.com
+  avatar: /img/avatar.jpg
+  describe: 网站简介。
+  ruleText: 暂不接受个人博客以外的友链申请，确保您的网站内容积极向上，文章至少30篇，原创70%以上，部署HTTPS。
+
+top_bars:
+  - title: home
+    url: /
+    children:
+      - title: archives2
+        url: /archives2/
+  - title: archives
+    url: /archives/
+    noswup: true
+
+sidebar:
+  social:  # 社交地址
+    - name: github
+      icon: fab fa-github   
+      url: https://github.com 
+    - name: gitee
+      icon: iconfont cg-gitee
+      url: https://gitee.com
+  typedTextPrefix: I`m
+  typedText: [ 'Web Developer' ]
+  info: # 个人信息 
+    - key: 地址 
+      val: 火星       
+    - key: 年龄
+      val: 18 
+
+banner:
+  index:
+    type: img
+    bgurl: https://pic1.zhimg.com/v2-b3c2c6745b9421a13a3c4706b19223b3_r.jpg?source=1940ef5c
+    bannerTitle: 树深时见鹿，<br>溪午不闻钟。
+    bannerText: Hi my new friend!
+
+footer:
+  copyrightYear: 2020
+  powered:
+    enable: true
+  beian:
+    enable: true
+    icp: 苏ICP备xxxxxxxx号
+  live_time:
+    enable: false
+    prefix: footer.tips
+    start_time: 04/10/2022 17:00:00
+
+is_toc: true
+
+lazyload:
+  enable: true
+
+archive:
+  type: more # less more
+
+
