@@ -1,537 +1,634 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yao">
+<meta property="og:url" content="https://mohalikeyou.github.io/index.html">
+<meta property="og:site_name" content="Yao">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Yao">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+
+
+<title >Yao</title>
+
+<!-- Favicon -->
+
+    <link href='/favicon-16x16.png?v=v1.1.10' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/favicon-32x32.png?v=v1.1.10' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+    <link href='/apple-touch-icon.png?v=v1.1.10' rel='apple-touch-icon' sizes='180x180' ></link>
+
+
+    <link href='/site.webmanifest' rel='manifest' ></link>
+
+
+<!-- Plugin -->
+
+
+
+
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 
-  
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+
+    
+
+    
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_383361_cfn4m13f4v.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"mohalikeyou.github.io","author":"Yao","root":"/","typed_text":["Web Developer"],"favicon":{"logo":"favicon-32x32.png","icon16":"favicon-16x16.png","icon32":"favicon-32x32.png","appleTouchIcon":"apple-touch-icon.png","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"failure.ico","showText":"(/≧▽≦/)Hey! Good again!","hideText":"(●—●)Oh, crash!","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"theme_version":"v1.1.10","theme":{"switch":true,"default":"style-light"},"search":{"enable":false,"type":"engine","href":"https://www.google.com/search?q=site:","domain":null},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms","author":"Post author: ","copyright_link":"Post link: ","copyright_license_title":"Copyright Notice: ","copyright_license_content":"All articles in this blog are licensed under undefined unless otherwise stated."},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":false,"clipboard":false},"swup":false};</script>
+
+<!-- Theme mode css -->
+
+    <link data-swup-theme="style-light" rel="stylesheet" href="/css/style-light.css?v=v1.1.10" id="trm-switch-style">
+    <link data-swup-theme="style-dark" rel="stylesheet" href="/css/style-dark.css?v=v1.1.10" id="trm-switch-style">
+    <script>
+        let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+        let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+        let themeMode = catchMode === 'style-dark' ? 'style-light' : 'style-dark';
+        let linkdom = document.querySelector('[data-swup-theme='+themeMode+']');
+        if(linkdom) linkdom.remove();
+    </script>
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+
+
+<!-- Site Analytics -->
+ 
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="far fa-moon"></i></i>
     </div>
-  </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" data-scroll-container style="opacity: 0">
+          <div data-scroll-section id="content" class="trm-scroll-section">
+
+            <div class="locomotive-scroll__sticky-target" style=" position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none;"></div>
+
+            <!-- top bar -->
+            <header class="trm-top-bar" data-scroll data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="-10">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+			<a href="/" class="trm-logo-frame trm-anima-link">
+				
+					<img src="/favicon-32x32.png" alt="logo">
+				
+				
+					<div class="trm-logo-text">
+						白云<span>苍狗</span>
+					</div>
+				
+			</a>
+			<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+
+			<!-- menu -->
+			<div class="trm-menu">
+				<nav>
+					<ul>
+						
+						<li class="menu-item-has-children current-menu-item">
+							<a  href="/" target="">
+								home
+							</a>
+							
+							<ul>
+								
+								<li>
+									<a  href="/archives2/" target="">
+										archives2
+									</a>
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a data-no-swup href="/archives/" target="">
+								archives
+							</a>
+							
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+			<!-- menu end -->
+			
+			<!-- mode switcher place -->
+			
+			<div class="trm-mode-switcher-place">
+				<!-- <div class="trm-hidden-switcher"> -->
+					<div class="trm-mode-switcher">
+					  <i class="far fa-sun"></i>
+					  <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+					  <label class="trm-swich" for="trm-swich"></label>
+					  <i class="far fa-moon"></i>
+					</div>
+				  <!-- </div> -->
+			</div>
+			
+			<!-- mode switcher place end -->
+
+			 
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
 </header>
+            <!-- top bar end -->
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-重装Windows" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/30/%E9%87%8D%E8%A3%85Windows/" class="article-date">
-  <time class="dt-published" datetime="2022-09-30T13:02:21.084Z" itemprop="datePublished">2022-09-30</time>
-</a>
+            <!-- body -->
+            <div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner" data-scroll data-scroll-direction="vertical">
     
-  </div>
-  <div class="article-inner">
+    <!-- banner cover -->
+    <img src="https://pic1.zhimg.com/v2-b3c2c6745b9421a13a3c4706b19223b3_r.jpg?source=1940ef5c" alt="banner" class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3">
+    <!-- banner cover end -->
     
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/30/%E9%87%8D%E8%A3%85Windows/">重装windows</a>
-    </h1>
-  
 
-      </header>
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container" data-scroll data-scroll-direction="vertical" data-scroll-speed="0">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            Hi my new friend!
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            树深时见鹿，<br>溪午不闻钟。
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        index.html
+                                    </span
+                                ></li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <a href="#about-triger" data-scroll-to="#about-triger" data-scroll-offset="-130" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </a>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card" data-scroll data-scroll-repeat data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="60"> 
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>    本贴记录了本人在重装Windows系统后需要注意的事项！</p>
-<h1 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h1><ol>
-<li><p>用户名一定要英文</p>
-</li>
-<li><p>使用专业版</p>
-</li>
-<li><p>惠普快速启动的快捷键为ESC</p>
-</li>
-<li><p>更改新文件的安装位置</p>
-</li>
-<li><p>软件和系统盘尽量分开，因为直接在系统盘装软件，可能需要部分权限，不方便</p>
-</li>
-<li><p>安装好一定的软件之后，记得创建好还原点，以后可以还原</p>
-</li>
-<li><p>取消打开每个软件的通知</p>
-</li>
-<li><p>不要把全局字符集都设置为utf8，因为部分国内软件不兼容。</p>
-</li>
-<li><p>WSL中的daemon的端口和本地端口共享，也就是说本机访问WSL的daemon是直接访问的。</p>
-</li>
-</ol>
-<h1 id="必装软件"><a href="#必装软件" class="headerlink" title="必装软件"></a>必装软件</h1><ol>
-<li><p>directX增强版，修复Windows常用的dll库</p>
-</li>
-<li><p>7z，最强解缩软件</p>
-</li>
-<li><p>印象笔记</p>
-</li>
-<li><p>坚果云，同步软件</p>
-</li>
-<li><p>知云文献翻译，看文献</p>
-</li>
-<li><p>XTranslator，全局翻译</p>
-</li>
-<li><p>everything，搜索软件</p>
-</li>
-<li><p>utool，效率工具，必装！</p>
-</li>
-<li><p>potplayer64，视频工具</p>
-</li>
-<li><p>Clash For Windows</p>
-</li>
-<li><p>windows terminal</p>
-</li>
-<li><p>ohmyposh，美化powershell和zsh；</p>
-</li>
-<li><p>git</p>
-</li>
-<li><p>Imtip</p>
-</li>
-<li><p>MyComputerManager，删除各种同步空间</p>
-</li>
-<li><p>新版powershell，简写为pwsh，位于<code>C:\Users\yao\AppData\Local\Microsoft\WindowsApps\pwsh.exe</code>，AppData是一个隐藏文件夹；</p>
-</li>
-</ol>
-<ul>
-<li><p>为powershell安装自动补全和智能提示</p>
-</li>
-<li><p>安装scoop包管理器</p>
-</li>
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20"><img class="trm-avatar" src="/img/avatar.jpg" alt="Avatar"> </div>
+    <h5 class="trm-name trm-mb-15">
+        白云苍狗
+    </h5>
+    
+    <div class="trm-label">
+        I`m
+        <span class="trm-typed-text">
+            <!-- Words for theme.user.typedText -->
+        </span>
+    </div>
+    
+</div>
+<!-- card header end -->
+
+<!-- sidebar social -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+<div class="trm-social">
+    
+        <a href="https://github.com" title="github" rel="nofollow" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    
+        <a href="https://gitee.com" title="gitee" rel="nofollow" target="_blank">
+            <i class="iconfont cg-gitee"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+
+<!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                火星
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                18
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                Age:
+            </div>
+            <div class="trm-label trm-label-light">
+                18
+            </div>
+        </li>
+    
 </ul>
-<ol start="17">
-<li>360安全卫士极速版，软件管家，360文件夹，360驱动大师</li>
-</ol>
-<ul>
-<li>如果老是对某类文件报错，就把整个文件夹都加入信任列表</li>
-</ul>
 
-      
+<!-- info end -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<!-- action button -->
+<div class="text-center">
+    <a href="mailto:admin@imalun.com" class="trm-btn">
+        Contact Me
+        <i class="far fa-envelope"></i>
+    </a>
+</div>
+<!-- action button end -->
+
+    
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/30/%E9%87%8D%E8%A3%85Windows/" data-id="cl8ojaji9000874vte8w4cejm" data-title="重装windows" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%91%86%E5%BC%84/" rel="tag">摆弄</a></li></ul>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="col-lg-8">
+                <div class="trm-content" id="trm-content">
+                    <div data-scroll data-scroll-repeat data-scroll-offset="500" id="about-triger"></div>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-KMP算法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/30/KMP%E7%AE%97%E6%B3%95/" class="article-date">
-  <time class="dt-published" datetime="2022-09-30T12:59:50.822Z" itemprop="datePublished">2022-09-30</time>
-</a>
+                    <!-- categories -->
+<div class="row hidden-sm">
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="KMP算法的前提我们首先需要定义的是next数组的含义是什么；"><a href="#KMP算法的前提我们首先需要定义的是next数组的含义是什么；" class="headerlink" title="KMP算法的前提我们首先需要定义的是next数组的含义是什么；"></a>KMP算法的前提我们首先需要定义的是next数组的含义是什么；</h1><ul>
-<li><ol>
-<li>next[j]表示的是，j位置及其以前的子串的最长相等前后缀的长度；</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>next[j]表示的是，j位置以前的子串的最长相等前后缀的长度；</li>
-</ol>
-</li>
-</ul>
-<h2 id="情况1：包含j位置本身的情况"><a href="#情况1：包含j位置本身的情况" class="headerlink" title="情况1：包含j位置本身的情况"></a>情况1：包含j位置本身的情况</h2><h3 id="1-1：不统一减1的情况；next数组保存的是，包含当前字符的最长前后缀长度，这个长度的值可以作为数组下标，也是用来比较主串和模式串是否相等的位置；"><a href="#1-1：不统一减1的情况；next数组保存的是，包含当前字符的最长前后缀长度，这个长度的值可以作为数组下标，也是用来比较主串和模式串是否相等的位置；" class="headerlink" title="1.1：不统一减1的情况；next数组保存的是，包含当前字符的最长前后缀长度，这个长度的值可以作为数组下标，也是用来比较主串和模式串是否相等的位置；"></a>1.1：不统一减1的情况；next数组保存的是，包含当前字符的最长前后缀长度，这个长度的值可以作为数组下标，也是用来比较主串和模式串是否相等的位置；</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="comment">// 前缀表不减一，直接作为next数组解答！</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">strStr</span><span class="params">(String haystack, String needle)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (needle.length() == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span>[] next = <span class="keyword">new</span> <span class="title class_">int</span>[needle.length()];</span><br><span class="line">        getNext(next, needle);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = <span class="number">0</span>; i &lt; haystack.length(); ++i) &#123;</span><br><span class="line">            <span class="comment">// 如果i和j不相等，就去找前一位的最大前后缀；</span></span><br><span class="line">            <span class="keyword">while</span> (j &gt; <span class="number">0</span> &amp;&amp; haystack.charAt(i) != needle.charAt(j)) &#123;</span><br><span class="line">                j = next[j - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 相等了，i 和 j 都后移；</span></span><br><span class="line">            <span class="keyword">if</span> (haystack.charAt(i) == needle.charAt(j)) &#123;</span><br><span class="line">                ++j;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 一旦超过t长度了，就代表匹配到了，此时i还没有加一，还位于最后一个匹配位置处！</span></span><br><span class="line">            <span class="keyword">if</span> (j == needle.length()) &#123; <span class="comment">// 注意这个位置</span></span><br><span class="line">                <span class="keyword">return</span> i - needle.length() + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 求next数组就是求最长相等前后缀长度</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">getNext</span><span class="params">(<span class="type">int</span>[] next, String pattern)</span> &#123;</span><br><span class="line">        <span class="comment">// next[j] 表示的是 j 位置（包含j）所保存最大相等前后缀的长度，这个长度直接作为数组标，表示的就是最长前缀的后一个位置</span></span><br><span class="line">        <span class="comment">// 也就是和主串比较的位置；</span></span><br><span class="line">        <span class="type">char</span>[] pat = pattern.toCharArray();</span><br><span class="line">        <span class="comment">// Next数组的回溯终点就是0-index:</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        next[<span class="number">0</span>] = j; <span class="comment">// 0号位，只有一个字母，不存在最大前后缀，所以长度为0;</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; pat.length; ++i) &#123; <span class="comment">// 对Next数组每个值进行归纳求解；</span></span><br><span class="line">        <span class="comment">// 找到与当前i相等的j位置，否则，当前位置不相等，那就找前一个位置的最长前后缀，</span></span><br><span class="line">        <span class="comment">// 反正就是找到一个位置的前后缀的后一个位置与i位置相等的位置，那么就在这个位置的基础上直接加一，就是所要的值；</span></span><br><span class="line">            <span class="keyword">while</span> (j &gt; <span class="number">0</span> &amp;&amp; pat[j] != pat[i]) &#123; <span class="comment">// 找到一个相等的位置，或者初始位置；</span></span><br><span class="line">                j = next[j - <span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 要么j为0，要么找到相等的位置；</span></span><br><span class="line">            <span class="keyword">if</span> (pat[j] == pat[i]) &#123; <span class="comment">// 找到相等的前后缀了；</span></span><br><span class="line">            ++j; <span class="comment">// 最长前后缀的长度加一，j 和 i同时后移，i后移在循环中实现；</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 当前i位置的要跳转的j位置就是，目前的j,就是最长相等前后缀的后面一个位置，也是包含i位置的，i处最长公共前后缀的长度；</span></span><br><span class="line">            next[i] = j;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div>
+<!-- categories end -->
 
-<h3 id="1-2-统一减去一的情况"><a href="#1-2-统一减去一的情况" class="headerlink" title="1.2 统一减去一的情况"></a>1.2 统一减去一的情况</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">strStr</span><span class="params">(String haystack, String needle)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (needle.length() == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">char</span>[] main = haystack.toCharArray();</span><br><span class="line">        <span class="type">char</span>[] model = needle.toCharArray();</span><br><span class="line">        <span class="type">int</span>[] next = <span class="keyword">new</span> <span class="title class_">int</span>[model.length];</span><br><span class="line">        getNext(next, model);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = -<span class="number">1</span>; i &lt; main.length; ++i) &#123;</span><br><span class="line">            <span class="keyword">while</span> (j &gt;= <span class="number">0</span> &amp;&amp; main[i] != model[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                j = next[j]; <span class="comment">// 去上一个位置找</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (main[i] == model[j + <span class="number">1</span>]) &#123;</span><br><span class="line">                ++j; <span class="comment">// 找到了就前进；</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (j == model.length - <span class="number">1</span>) &#123; <span class="comment">//注意这个位置；j经过加一后到达了model.length - 1,但i 位置还没有加一，始终在匹配串的末端；</span></span><br><span class="line">                <span class="keyword">return</span> i - model.length + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">getNext</span><span class="params">(<span class="type">int</span>[] next, <span class="type">char</span>[] pattern)</span> &#123;</span><br><span class="line">        <span class="comment">// 采用 “最大前后缀长度减一” 的方式初始化next数组；</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">        next[<span class="number">0</span>] = j; <span class="comment">// 初始化即-1了；</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; pattern.length; ++i) &#123;</span><br><span class="line">            <span class="comment">// 找到第一个相等的位置；</span></span><br><span class="line">            <span class="keyword">while</span> (j &gt;= <span class="number">0</span> &amp;&amp; pattern[j + <span class="number">1</span>] != pattern[i]) &#123; <span class="comment">// 由于j 减去1了，所有就比较j + 1和i 的大小，和上个情况也是类似的；</span></span><br><span class="line">                j = next[j]; <span class="comment">// 去找前一个位置的最大前后缀；</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (pattern[j + <span class="number">1</span>] == pattern[i]) &#123;</span><br><span class="line">                j++; <span class="comment">// 最大前后缀长度加一，i 和 j 同时移动；</span></span><br><span class="line">            &#125;</span><br><span class="line">            next[i] = j; <span class="comment">// 同样的，最长前后缀的长度作为数组下标，就是每个位置不匹配时，模式串需要和主串匹配的位置；</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="情况2：不包含j位置本身的next数组；"><a href="#情况2：不包含j位置本身的next数组；" class="headerlink" title="情况2：不包含j位置本身的next数组；"></a>情况2：不包含j位置本身的next数组；</h2><p>&#x2F;&#x2F; 暂时没理清楚</p>
-
-      
+<!-- newest publications -->
+<div class="row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-mb-40 trm-title-with-divider">
+            Newest Publications 
+            <span data-number="01"></span>
+        </h5>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/30/KMP%E7%AE%97%E6%B3%95/" data-id="cl8ojajht000374vt12tdazsd" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-二分法详解" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/30/%E4%BA%8C%E5%88%86%E6%B3%95%E8%AF%A6%E8%A7%A3/" class="article-date">
-  <time class="dt-published" datetime="2022-09-30T09:21:16.000Z" itemprop="datePublished">2022-09-30</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/30/%E4%BA%8C%E5%88%86%E6%B3%95%E8%AF%A6%E8%A7%A3/">二分法详解</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="初级"><a href="#初级" class="headerlink" title="初级"></a>初级</h1><ul>
-<li><p>二分查找的适合范围：有序数组</p>
-<ul>
-<li><p>如果有重复元素，则查找结果不唯一；</p>
-</li>
-<li><p>也可以部分有序；</p>
-</li>
-</ul>
-</li>
-<li><p>二分查找的结果最终只呈现三种情况；</p>
-</li>
-</ul>
-<ol>
-<li><p>临界情况一：两个元素时：i.e., <code>nums[mid] &gt; target</code><br>如果 <code>nums[mid] &gt; target</code>  ，那么去左边区间查找，<code>high = mid - 1</code>, 因为此时low等于mid ,所以查找结束，结束的情形是：<code>nums[low/mid]</code>是第一个大于target的位置，也是target的插入位置，high位置是第一个小于target的位置，因为当前high的位置之前已经查找过了， 是最后一次区间的左边。</p>
-</li>
-<li><p>临界情况二：一个元素时：i.e., <code>nums[mid] &gt; target</code>；<br>如果<code>nums[mid] &gt; target</code>, 此时mid &#x3D;&#x3D; low &#x3D;&#x3D; high, 我们仍然要去左方区间去找，所以 <code>high = mid - 1</code>, 所有 high位置仍然是第一个小于target的位置，low位置仍然是第一个大于target的地方，也是要插入的位置；</p>
-</li>
-<li><p>临界情况三：一个元素时：i.e., <code>nums[mid] &lt; target</code>, 此时mid &#x3D;&#x3D; low &#x3D;&#x3D; high，我们要去有房区间找，<code>low = mid + 1</code>，但右方区间，我们已经超过，是都大于target的位置，所以low位置仍然是第一个大于target的位置，同理，high位置也是第一个小于target的位置。</p>
-</li>
-</ol>
-<hr>
-<p><strong>综上所述</strong>, 正常形式的二分查找，查找失败时，low位置就是第一个大于target的位置，即可插入位置，high位置是第一个小于target的位置，即，<code>target所在区间为(high,low)区间，不包含high,low位置</code>。</p>
-<ul>
-<li>注意</li>
-</ul>
-<p>上述所指的二分是指 判断条件为 low &lt;&#x3D; high的，左闭右闭区间。</p>
-<hr>
-<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><ul>
-<li>Low指针只往右走，high指针只往左走。</li>
-</ul>
-<p>我们可以让 &#x3D;&#x3D; 的情况合并到大于或小于的方向。</p>
-<ol>
-<li>如果使用判断条件 <code>nums[mid] &gt;= target</code>，即，当前元素 &#x3D;&#x3D; target，指针high仍然往左走 <code>high = mid - 1</code>,也就说，不会在&gt;&#x3D;target的地方停下。</li>
-</ol>
-<p>这种情况，将区间分为 <code>&lt; target的区间</code>和<code> &gt;= target的区间</code>，那么最终结束情况为，high位置停留在第一个小于target的位置，low位置停留在第一个大于等于target的位置。<br><code>这种情况的low，是数组中第一次出现&gt;= target的位置，high是数组最后一个小于target的位置</code>；</p>
-<ol start="2">
-<li>判断条件<code>nums[mid] &lt;= target</code>, 即当前元素 &#x3D;&#x3D;target时，指针low仍然往右边走<code>low = mid + 1</code>，也就说，不会在&lt;&#x3D; target的位置停下.</li>
-</ol>
-<p>这种情况将区间划分为 <code> &lt;= target的区间</code>，和<code>&gt; target的区间</code>，那么最终结束情况为：high位置停留在最后一个小于等于target的区域,low位置停留在第一个大于target的位置；<br><code>这种情况的low，是数组中第一次出现 &gt; target的位置，high位置是最后一个小于等于 target的位置</code>；</p>
-<hr>
-<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><ol>
-<li>如果查找插入位置，即正常写法，low位置即插入位置，第一个大于target的位置；这种情况只适合distinct数组</li>
-<li>查找结束时，low位置总是在high位置后面一个；</li>
-<li>如果查找第一个大于等于target的位置，那么 <code>==</code>号与 右边high合并，low位置即使第一个大于等于target的位置</li>
-<li>如果查找第一个大于target的位置，那么<code>==</code>号与左边low区间合并，low位置即使第一个大于target的位置；</li>
-<li>查找左边界和右边界，是不同的！</li>
-</ol>
-
-      
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/2022/09/30/%E9%87%8D%E8%A3%85Windows/" class="trm-cover-frame trm-anima-link">
+            <img src="/img/block.jpg" alt="cover">
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    Unclassified
+                </a>
+            </div>
+            <h5>
+                <a href="/2022/09/30/%E9%87%8D%E8%A3%85Windows/" class="trm-anima-link">
+                    重装windows
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/09/30</li>
+                <li>09:02</li>
+                
+                
+            </ul>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/30/%E4%BA%8C%E5%88%86%E6%B3%95%E8%AF%A6%E8%A7%A3/" data-id="cl8ojajhv000474vt1x4rh6de" data-title="二分法详解" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/" rel="tag">编程技巧</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/30/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-09-30T07:54:15.914Z" itemprop="datePublished">2022-09-30</time>
-</a>
+</div>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/2022/09/30/KMP%E7%AE%97%E6%B3%95/" class="trm-cover-frame trm-anima-link">
+            <img src="/img/block.jpg" alt="cover">
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    Unclassified
+                </a>
+            </div>
+            <h5>
+                <a href="/2022/09/30/KMP%E7%AE%97%E6%B3%95/" class="trm-anima-link">
+                    
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/09/30</li>
+                <li>08:59</li>
+                
+                
+            </ul>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/30/hello-world/" data-id="cl8ojajhn000174vtaw762t7s" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Clash" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/30/Clash/" class="article-date">
-  <time class="dt-published" datetime="2022-09-29T16:00:00.000Z" itemprop="datePublished">2022-09-30</time>
-</a>
+</div>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/30/Clash/">如何优雅的使用ClashForWindows</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>本文参考了以下文章</p>
-<p>[Introduce](<a target="_blank" rel="noopener" href="https://lancellc.gitbook.io/clash/clash-config-file/proxy-groups/auto">Auto - Clash</a>)</p>
-<h1 id="优雅姿势"><a href="#优雅姿势" class="headerlink" title="优雅姿势"></a>优雅姿势</h1><ul>
-<li><p>设置匹配关键字git, github，走代理</p>
-</li>
-<li><p>开启TUN模式和Mixin模式</p>
-</li>
-<li><p>Gobal + 代理节点 + TUN模式，接管系统所有流量走代理</p>
-</li>
-<li><p>每次非正常关闭clash，都需要重新打开TUN和Mixin模式</p>
-</li>
-</ul>
-<h1 id="Tun模式"><a href="#Tun模式" class="headerlink" title="Tun模式"></a>Tun模式</h1><p>    接管系统所有流量，包括终端，UWP等</p>
-<h1 id="Mixin模式"><a href="#Mixin模式" class="headerlink" title="Mixin模式"></a>Mixin模式</h1><p>    这个是部分覆盖clash的配置文件，覆盖行为发生在内存中，也就说：用来指定我们自己的路由规则；注意<code>缩进</code>关系！</p>
-<ul>
-<li>Rules规则如下：</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mixin:</span> <span class="comment"># object</span></span><br><span class="line">  <span class="attr">rule-providers:</span></span><br><span class="line">    <span class="attr">reject:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/reject.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">icloud:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/icloud.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">apple:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/apple.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">google:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/google.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">proxy:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/proxy.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">direct:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/direct.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">private:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/private.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">gfw:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/gfw.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">greatfire:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/greatfire.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">tld-not-cn:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">domain</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/tld-not-cn.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">telegramcidr:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">ipcidr</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/telegramcidr.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">cncidr:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">ipcidr</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/cncidr.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">lancidr:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">ipcidr</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/lancidr.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">applications:</span></span><br><span class="line">      <span class="attr">type:</span> <span class="string">http</span></span><br><span class="line">      <span class="attr">behavior:</span> <span class="string">classical</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">&quot;https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt&quot;</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">./ruleset/applications.yaml</span></span><br><span class="line">      <span class="attr">interval:</span> <span class="number">86400</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="attr">rules:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">DOMAIN-KEYWORD,</span> <span class="string">git,</span> <span class="string">Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">DOMAIN-KEYWORD,</span> <span class="string">github,</span> <span class="string">Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,applications,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">DOMAIN,clash.razord.top,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">DOMAIN,yacd.haishan.me,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,private,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,reject,REJECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,icloud,Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,apple,Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,google,Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,proxy,Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,direct,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,lancidr,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,cncidr,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">RULE-SET,telegramcidr,Proxies</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">GEOIP,LAN,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">GEOIP,CN,DIRECT</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">MATCH,Proxies</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Diff功能"><a href="#Diff功能" class="headerlink" title="Diff功能"></a>Diff功能</h1><p>    这个功能，可以在每次更新订阅时，固定对订阅中的某些部分进行修改，例如我可以把部分节点删除，那么以后每次更新，都会删除这个节点</p>
-<h1 id="规则集"><a href="#规则集" class="headerlink" title="规则集"></a>规则集</h1><p>规则集来自于GitHub中的[clash-rules](<a target="_blank" rel="noopener" href="https://github.com/Loyalsoldier/clash-rules">Loyalsoldier&#x2F;clash-rules: 🦄️ 🎃 👻 Clash Premium 规则集(RULE-SET)，兼容 ClashX Pro、Clash for Windows 客户端。 (github.com)</a>)  </p>
-<h1 id="Proxies"><a href="#Proxies" class="headerlink" title="Proxies"></a>Proxies</h1><p>这个是接管流量的分组，存在套娃的情况，我们一般都是走rule模式，除非接管全局流量走代理或这直连，才使用global模式</p>
-<h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>Clash中的各节点的信息以及具体配置，都来自于这个文件，在这个文件中我们可以设置<code>url-test</code> ，<code>tolerance</code> ，<code>interval</code> </p>
-
-      
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/2022/09/30/%E4%BA%8C%E5%88%86%E6%B3%95%E8%AF%A6%E8%A7%A3/" class="trm-cover-frame trm-anima-link">
+            <img src="/img/block.jpg" alt="cover">
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    Unclassified
+                </a>
+            </div>
+            <h5>
+                <a href="/2022/09/30/%E4%BA%8C%E5%88%86%E6%B3%95%E8%AF%A6%E8%A7%A3/" class="trm-anima-link">
+                    二分法详解
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/09/30</li>
+                <li>05:21</li>
+                
+                
+            </ul>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/30/Clash/" data-id="cl8ojajhi000074vtajpdba1j" data-title="如何优雅的使用ClashForWindows" class="article-share-link">Share</a>
+</div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/2022/09/30/hello-world/" class="trm-cover-frame trm-anima-link">
+            <img src="/img/block.jpg" alt="cover">
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    Unclassified
+                </a>
+            </div>
+            <h5>
+                <a href="/2022/09/30/hello-world/" class="trm-anima-link">
+                    Hello World
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/09/30</li>
+                <li>03:54</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/2022/09/30/Clash/" class="trm-cover-frame trm-anima-link">
+            <img src="/img/block.jpg" alt="cover">
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    Unclassified
+                </a>
+            </div>
+            <h5>
+                <a href="/2022/09/30/Clash/" class="trm-anima-link">
+                    如何优雅的使用ClashForWindows
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/09/30</li>
+                <li>12:00</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+<!-- newest publications end -->
+
+
+    <div class="trm-pagination">
+        <span class="page-number current">1</span>
+    </div>
+
+
+                    <div class="trm-divider trm-mb-40"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation" data-scroll data-scroll-offset="50">
+
+    
+        <div class="trm-footer-item">
+            <a rel="noopener" href="https://beian.miit.gov.cn/" target="_blank">苏ICP备xxxxxxxx号</a>
+        </div>
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2020- 2022</span>
+            <span class="footer-separator">·</span>
+            <span class="trm-accent-color">白云苍狗</span>
+        </div>
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v6.3.0
+            </span>
+            <span class="footer-separator"> | </span>
+            <span> 
+                Theme - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                vv1.1.10
+            </span>
+        </div>
       
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%91%86%E5%BC%84/" rel="tag">摆弄</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
+     
 
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%91%86%E5%BC%84/" rel="tag">摆弄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/" rel="tag">编程技巧</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E6%91%86%E5%BC%84/" style="font-size: 20px;">摆弄</a> <a href="/tags/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">编程技巧</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/09/30/%E9%87%8D%E8%A3%85Windows/">重装windows</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/30/KMP%E7%AE%97%E6%B3%95/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/30/%E4%BA%8C%E5%88%86%E6%B3%95%E8%AF%A6%E8%A7%A3/">二分法详解</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/30/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2022/09/30/Clash/">如何优雅的使用ClashForWindows</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+     
 </footer>
+ 
+                    <!-- footer end -->
 
+                </div>
+            </div>
+        </div>
     </div>
-    <nav id="mobile-nav">
+</div>
+            <!-- body end -->
+          </div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+
+  </div>
+  <!-- app wrapper end -->
+
+  <div id="trm-back-top" class="trm-back-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  <!-- Plugin -->
+
+
+
+    
+    
+
+    
+<script src="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    
+<script src="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+
+    
+
+    
+        <script src="/js/plugins/typing.js?v=v1.1.10"></script>
+    
+
+    
+
     
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+
+<!-- 评论插件 -->
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
 
 
+<script id="async-script" src="/js/main.js?v=v1.1.10"></script>
 
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
 </html>
