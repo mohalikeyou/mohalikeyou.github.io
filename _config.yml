@@ -102,5 +102,5 @@ theme: async
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://github.com/mohalikeyou/mohalikeyou.github.io
+  repo: https://github.com/mohalikeyou/mohalikeyou.github.io.git
   branch: gh-pages
