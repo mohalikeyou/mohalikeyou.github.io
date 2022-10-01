@@ -6,11 +6,11 @@ tags : 摆弄
 
 本文参考了以下文章
 
-[Introduce]([Auto - Clash](https://lancellc.gitbook.io/clash/clash-config-file/proxy-groups/auto))
+[Introduce](https://lancellc.gitbook.io/clash/clash-config-file/proxy-groups/auto)
 
 # 优雅姿势
 
--  设置匹配关键字git, github，走代理
+- 设置匹配关键字git, github，走代理
 
 - 开启TUN模式和Mixin模式
 
@@ -158,7 +158,7 @@ mixin: # object
 
 # 规则集
 
-规则集来自于GitHub中的[clash-rules]([Loyalsoldier/clash-rules: 🦄️ 🎃 👻 Clash Premium 规则集(RULE-SET)，兼容 ClashX Pro、Clash for Windows 客户端。 (github.com)](https://github.com/Loyalsoldier/clash-rules))  
+规则集来自于GitHub中的[rules](https://github.com/Loyalsoldier/clash-rules)
 
 # Proxies
 
